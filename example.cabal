@@ -1,0 +1,16 @@
+cabal-version:      3.0
+name:               example
+version:            0.1.0.0
+author:             Diamondy4
+maintainer:         diamondy4@hotmail.com
+
+library
+  ghc-options:    -fplugin=GHC.TypeLits.Normalise
+  build-depends:
+    , base
+    , ghc-typelits-natnormalise
+
+  hs-source-dirs: lib
+
+  exposed-modules: Lib
+
